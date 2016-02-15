@@ -1,0 +1,1 @@
+Custom Stylesheet is a WordPress plugin that allows you to add CSS code in the plugins' Admin page. The plugin inserts CSS code to WordPress' head section. The CSS code will stick even if you jump from one theme to another. It also works as a good test platform for testing CSS code quickly without modifying your theme's stylesheet.
