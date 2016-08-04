@@ -1,10 +1,10 @@
 <?php
 
 /*
-Plugin Name: Custom Stylesheet
+Plugin Name: UR Custom Stylesheet
 Plugin URI: http://uly.me/wordpress-custom-css-stylesheet/
-Description: Do you want a custom stylesheet that sticks? This plugin allows you to keep your custom CSS styles, even if you jump from theme to theme, and regardless of theme update overwrites. This plugin is also a good place to test your custom CSS.
-Version: 1.0
+Description: Custom Stylesheet that sticks regardless of theme.
+Version: 1.1
 Author: Ulysses Ronquillo
 Author URI: http://uly.me
 */
@@ -21,7 +21,7 @@ function urr_custom_stylesheets() {
 add_action( 'admin_menu', 'urr_custom_stylesheet_add_options' );
 
 function urr_custom_stylesheet_add_options() {
-	add_theme_page( 'Stylesheet', 'Stylesheet', 'manage_options', __FILE__, 'urr_custom_stylesheets' );
+	add_theme_page( 'UR Stylesheet', 'UR Stylesheet', 'manage_options', __FILE__, 'urr_custom_stylesheets' );
 }
 
 
@@ -33,7 +33,7 @@ function urr_custom_stylesheet_toolbar_items($admin_bar){
 
 	$admin_bar->add_menu( array(
 		'id'    => 'custom-stylesheet',
-		'title' => 'Stylesheet',
+		'title' => 'UR Stylesheet',
 		'href'  => get_bloginfo('url') .'/wp-admin/themes.php?page=stylesheet/stylesheet.php',	
 		'meta'  => array(
 			'title' => __('Stylesheet'),			

@@ -21,13 +21,13 @@ if($_POST['urr_custom_stylesheet_hidden'] == 'Y') {
 
 <div class="wrap">
 
-  <?php echo "<h2>" . __( 'Custom Stylesheet', 'urr_custom_stylesheet' ) . "</h2>"; ?>
+  <?php echo "<h2>" . __( 'UR Custom Stylesheet', 'urr_custom_stylesheet' ) . "</h2>"; ?>
 
   <form name="urr_custom_stylesheet_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 
   <input type="hidden" name="urr_custom_stylesheet_hidden" value="Y">
 
-  <h3><?php _e("Add Your Own Style: " ); ?></h3>
+  <h3><?php _e("Add Your Own CSS Styles: " ); ?></h3>
 
   <p>
   Example:<br/>
